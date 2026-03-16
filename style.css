@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* HEADER */
+header{
+    background:#0a1f44;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#4da6ff;
+}
+
+/* HERO */
+.hero{
+    background-image:url("img/finanzas.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+/* SERVICIOS */
+#servicios{
+    padding:40px;
+    text-align:center;
+}
+
+.servicios-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.servicio{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    width:250px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACTO */
+#contacto{
+    padding:40px;
+    background:#e9edf5;
+}
+
+form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+input, textarea{
+    margin-bottom:15px;
+    padding:10px;
+}
+
+/* BOTÓN */
+button{
+    background:#0a1f44;
+    color:white;
+    padding:10px;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1c3faa;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0a1f44;
+    color:white;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+.servicios-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
